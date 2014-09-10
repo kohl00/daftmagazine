@@ -1,11 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,300,600);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:700|Noto+Serif:400,700);
 
-$font-family-sans-serif: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+$font-family-sans-serif: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Noto Serif", Times, serif;
+$font-family-base: $font-family-serif;
 // $brand-primary: #ff6000;
 // $body-bg: #747474;
 // $text-color: #d7d7d7;
-
+$sidebar-gray: #f7f5f1;
 // $panel-bg: rgba(16,16,16,0.8);
 // $panel-default-border: #000;
 // $panel-default-heading-bg: rgba(64,64,64,0.8);

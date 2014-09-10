@@ -1,0 +1,24 @@
+<div class="col-md-4 hidden-xs outline breaking-sidebar">
+   		<div class="row breaking-header">
+   			<div class="col-md-offset-2">
+   				<h4>Breaking News!</h4>
+   			</div>
+             <hr class="breaking-header-hr"/>
+   		</div>
+
+   		<% 6.times do%>
+   			<div class="row breaking-news blurb">
+   				<div class="col-md-2">
+   					<img src='<%= image_url ('icon_finance.png') %>' class="finance-icon"/>
+   				</div>
+   				
+   				<div class="col-md-10">
+                  <div class="row">
+   					 <p class="breaking-title"> This is a very long and interesting Breaking News title.</p>
+                     <h6>BY AUTHOR NAME</h6>
+                  </div>
+   				</div>
+   			</div>
+            <hr class="breaking"/>
+   			<% end %>
+</div>

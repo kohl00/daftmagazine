@@ -1,2 +1,48 @@
-<h1>Static#category</h1>
-<p>Find me in app/views/static/category.html.erb</p>
+<div class="container-fluid outline body">
+	<%= render 'head_nav.html.erb' %>
+      <!--end category nav-->
+   <div class="row section-home">
+   		<div class="col-md-8 outline white-bg">
+   			<div class="row">
+   				<div class="col-md-offset-1 col-xs-12 section-news">
+   					 <p class="tech-badge">Latest in Tech News</p>
+   				</div>
+   			</div>
+              <hr class="latest-in"/>
+              
+   			  <% 8.times do %>
+   				   <div class="row index-row">
+   					    <div class=" col-md-3 col-md-offset-2 hidden-xs index-thumbnail">
+   						     <img class="img-responsive" src="http://placehold.it/200x100"/>
+   					    </div>
+   					      <div class="col-md-8 col-xs-12 index-article">
+   						       <h3>Article Heading</h3>
+                     <h6>BY AUTHOR NAME</H6>
+   							      <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 	do eiusmod tempor incididunt ut labore let dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+   							      </p>
+   					      </div>
+   				   </div>
+                    <hr class="articles"/>
+   			      <% end %>
+
+   			          <div class="row">
+   				           <div class="col-md-9 col-md-offset-2 col-xs-12 pull-right">
+   					          <ul class="pagination">
+                         <li><a href="#">&laquo;</a></li>
+                         <li><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">3</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li><a href="#">&raquo;</a></li>
+                      </ul>
+   				           </div>
+   			          </div>
+   		</div>
+   		<%= render 'breaking_news_sidebar' %>
+   	</div>
+   	  <%= render 'footer' %>
+</div>
+</div>
+

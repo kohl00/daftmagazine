@@ -1,2 +1,89 @@
-<h1>Static#profile</h1>
-<p>Find me in app/views/static/profile.html.erb</p>
+<div class="container-fluid">
+	<div class="row top-header outline">
+		<div class="col-md-1 col-md-offset-1 top-header-profile">
+				<img src="<%= image_url 'profile_tag.png' %>" class="profile-backing"/>
+				<img src="<%= image_url 'http://placehold.it/42x42' %>" class="profile-avatar"/>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<p class="welcome-profile-page">WELCOME,NEW TO DAFT? <a href="#">SUBSCRIBE NOW</a></p>
+      	</div>
+
+		<div class="col-md-5 col-md-offset-1 col-xs-6 pull-right">
+			 <form class="navbar-form navbar-right profile-page-bar" role="signin">
+			 		<button type="submit" class="btn btn-defualt my-profile">MY PROFILE</button>
+                  	<button type="submit" class="btn btn-default create-post">CREATE POST</button>
+                  	<button type="submit" class="btn btn-default sign-out">SIGN OUT</button>
+         	</form>
+      </div>
+	</div>
+   <!--end top nav-->
+      <div class="row top-nav outline white-bg category-nav">
+         		    <div class="col-md-2 hidden-sm hidden-xs mast-logo-profile-page img-responsive">
+         			      <img src='<%= image_url('daft_logo.png') %>'/>
+         		    </div>
+      		           <div class="col-md-8 col-md-offset-1 col-sm-4 col-xs-3 profile-page-nav">
+            			       <div class="row category-list">
+                              <div class="col-md-2 category-item active tech">
+                                 <a href="#"><img src="<%= image_url 'nav_tech.png' %>" class="img-responsive"/></a>
+                              </div>
+                               <div class="col-md-2 category-item active finance">
+                                 <a href="#"><img src="<%= image_url 'nav_finance.png' %>" class="img-responsive"/></a>
+                              </div>
+                               <div class="col-md-2 category-item active art">
+                                 <a href="#"><img src="<%= image_url 'nav_art.png' %>" class="img-responsive"/></a>
+                              </div>
+                               <div class="col-md-2 category-item active music">
+                                 <a href="#"><img src="<%= image_url 'nav_music.png' %>" class="img-responsive"/></a>
+                              </div>
+                               <div class="col-md-2 category-item active food">
+                                 <a href="#"><img src="<%= image_url 'nav_food.png' %>" class="img-responsive"/></a>
+                              </div>
+                               <div class="col-md-2 category-item active culture">
+                                 <a href="#"><img src="<%= image_url 'nav_culture.png' %>" class="img-responsive"/></a>
+                              </div>
+                           </div>
+   		              </div>
+         </div>
+    <div class="category-nav-stripes row"></div>
+
+
+	<div class= "row profile-page-body">
+		<div class="col-md-3 col-md-offset-1 bio-info">
+			<img src="http://placehold.it/150x150" class="large-profile-pic"/>
+			<h2>Annie<img src="<%= image_url 'edit_pencil.png' %>"/></h2>
+			<h5>EMAIL</h5>
+			<p>whatever@gmail.com</p>
+			<h5>ADDRESS</h5>
+			<p>18 Bridge Street<br/>Brooklyn,NY</p>
+			<h5>PAYMENT</h5>
+			<p>Real Soon<p>
+		</div>
+
+
+		<div class="col-md-7 my-profile-my-bio">
+			<h1>My Bio<img src="<%= image_url 'edit_pencil.png' %>"/>
+			</h1>
+			<p>
+				Lorem ipsum dolor sit amet, quaeque accusam omnesque sea ea, dicunt persequeris quo et. Mel forensibus mnesarchum et. Sit scaevola ponderum ex. Ad error convenire posidonium mea. Cum vide primis in. Nibh equidem insolens ei pri, duo falli laoreet forensibus an. Veri oportere scripserit vis et, no usu maluisset contentiones
+			</p>
+			<h1 class="stories-list-heading"> My Stories</h1>
+
+			<%5.times do %>
+				<div class="row my-stories-list">
+					<div class="col-md-1">
+						<img src="<%= image_url 'icon_tech.png' %>" class="profile-stories"/>
+					</div>
+					<div class="col-md-10">
+						<h4>Article Title</h4>
+						<p>Monday</p>
+					</div>
+					<div class="col-md-1">
+						<img src="<%= image_url 'edit_pencil.png'%>" class="edit-btn"/>
+					</div>
+				</div>
+				<hr/> 
+			<% end %>
+		</div>	
+	</div>
+	<%= render "footer" %>
+</div>

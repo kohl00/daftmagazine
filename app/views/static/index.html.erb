@@ -1,1 +1,52 @@
-index.html.erb
+<div class="container-fluid">
+<%= render 'head_nav' %>
+
+	<div class="row carousel">
+		<div class="col-md-2">
+			<img src="<%= image_url 'left_carousel.png' %>"/>
+		</div>
+		<div class="col-md-8">
+			<img class="chair" src="<%= image_url 'chair_carousel.png' %>"/>
+		</div>
+		<div class="col-md-2">
+			<img src="<%= image_url 'right_carousel.png' %>"/>
+		</div>
+	</div>			
+				
+	<% 4.times do %>
+		<div class="row">
+   			<div class="col-md-8 col-md-offset-2 index-button">
+   				<img class="article-badge-strikethru center-block" src="<%= image_url 'icon_tech.png' %>"/>
+   				<hr/>
+   			</div>
+   		</div>
+
+   		<div class="row feature">
+   			<div class=" col-md-2 col-md-offset-1 hidden-xs feature-thumbnail">
+   				<img class="img-responsive" src="http://placehold.it/200x100"/>
+   			</div>
+   		 	<div class="col-md-8 col-xs-12 section-article">
+   				<h3>Article Heading</h3>
+           		   <h6>BY AUTHOR NAME</H6>
+   				   <p> 
+               		 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 	do eiusmod tempor incididunt ut labore let dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+   				  </p>
+   		 	</div>
+   		</div>
+     <% end %>
+     <hr/>
+     <div class="row">
+    	 <div class="col-md-12 col-xs-12 text-center">
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+     			<li><a href="#">1</a></li>
+     			<li><a href="#">2</a></li>
+     			<li><a href="#">3</a></li>
+     			<li><a href="#">4</a></li>
+     			<li><a href="#">5</a></li>
+     			<li><a href="#">&raquo;</a></li>
+     		</ul>
+     	</div><!--pag-->
+ 	</div>
+	<%= render 'footer' %>
+</div>
